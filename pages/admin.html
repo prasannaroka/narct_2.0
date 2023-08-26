@@ -7,10 +7,14 @@
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
 </head>
 <div>
   <!-- <Header /> -->
-  <div class="flex items-center bg-gradient-to-l from-green-600  px-8 py-2 bg-green-600 h-14 ">
+  <div class="bg-opacity-90 z-10 backdrop-filter sticky top-0 flex items-center bg-gradient-to-l from-green-600  px-8 py-2 bg-green-600 h-14 ">
     <div class="bg-white rounded-full h-12  w-14 ">
       <img src="/images/narc.png" class="  h-12 w-full" alt="" />
     </div>
@@ -23,7 +27,7 @@
         </span>
       </div>
       <div class="font-bold text-white text-xl hover:text-[1.6rem]">
-        <a href="/index.html">Logout</a>
+        <a href="/index.html">Logout <span >▼</span></a>
       </div>
 
     </div>
@@ -34,7 +38,7 @@
   <div class="grid grid-cols-6">
     <div class=" h-full hidden md:block">
       <!-- <SideBar /> -->
-      <div class="bg-gradient-to-l from-green-600 bg-green-200 lg:min-h-[93vh] h-full border  border-r-2 pt-5">
+      <div class="w-[15.8rem] fixed bg-gradient-to-l from-green-600 bg-green-200 lg:min-h-[93vh] h-full border  border-r-2 pt-5">
         <div class=" ml-4 font-bold text-2xl text-green-900">Menu</div>
 
         <div class=" flex flex-col  lg:mt-6 p-6  ">
@@ -87,9 +91,12 @@
           </div>
         </div>
         <div
-          class=" lg:w-full md:w lg:p-4 items-center   flex flex-col  h-[16rem] lg:h-[19rem] w-full  md:mt-2 pt-2 rounded-lg shadow border">
+          class=" lg:w-full mx-auto md:w lg:p-4 items-center    h-[16rem] lg:h-[25rem] w-full  md:mt-2 pt-2 rounded-lg shadow border">
           <span class='font-semibold text-2xl ' id="sidebarToggle">Users List </span>
-          <table class="table-auto w-full mt-1 ">
+          <div class="mt-6">
+
+          
+          <table id="myDataTable3" class="table-auto w-full mt-1 ">
             <thead>
               <tr>
                 <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
@@ -145,15 +152,16 @@
             </tbody>
           </table>
         </div>
+        </div>
       </div>
 
 
       <div id="additionalContainer"
-        class="hidden bg-gray-10 lg:m-20 lg:w-full lg:ml-[0rem]  lg:p-6 lg:h-[25rem]  border-gray-500 ">
-        <div class="  lg:h-[21.9rem] mx-auto bg-white lg:-mt-28 p-4 rounded-lg -mt-24  shadow border w-full">
+        class="hidden bg-gray-10  lg:w-full   lg:p-6 lg:h-[27rem]  border-gray-500 ">
+        <div class="  lg:h-[27rem] mt-5 mx-auto bg-white p-4 rounded-lg   shadow border w-full">
           <span class='font-semibold text-xl  '>Data List :</span>
           <div class="mt-2">
-            <table class="table-auto  w-full">
+            <table id="myDataTable4" class="table-auto  w-full">
               <thead>
                 <tr>
                   <th class="border-gray-500 border text-xs lg:text-xl  font-semibold h-10 lg:px-4 px-1 py-1 lg:py-2">
@@ -230,6 +238,25 @@
       sidebar.style.left = '-250px';
     }
   });
+  // 
+  $(document).ready(function() {
+    $('#myDataTable3').DataTable({
+        paging: true, // Enable pagination
+        searching: true, // Enable searching
+        ordering: true, // Enable sorting
+        // More options...
+    });
+});
+// 
+$(document).ready(function() {
+    $('#myDataTable4').DataTable({
+        paging: true, // Enable pagination
+        searching: true, // Enable searching
+        ordering: true, // Enable sorting
+        // More options...
+    });
+});
+
 </script>
 </body>
 

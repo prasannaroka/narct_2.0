@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <div>
+        <!-- <Header /> -->
+        <div class="bg-gradient-to-l from-green-600 flex items-center  px-8 py-2 bg-green-600 h-14 ">
+            <div class="bg-white rounded-full h-12  w-14 ">
+              <img src="/images/narc.png"class="  h-12 w-full" alt="" />
+            </div>
+      
+            <div class="flex justify-between w-full ml-4">
+              <div>
+      
+              <span class="text-white font-bold lg:text-2xl">
+                Nepal Agricultural Research Council
+              </span>
+              </div>
+              <div class="font-bold text-white text-xl hover:text-[1.6rem]">
+                <a href="/index.html">Logout<span >▼</span></a>
+              </div>
+      
+            </div>
+            
+          </div>
+        <!-- <Header /> -->
+    
+        <div class="grid grid-cols-6">
+          <div class=" h-full hidden md:block">
+            <!-- <SideBar3 /> -->
+            <div class="bg-green-200 lg:min-h-[93vh] h-full border  border-r-2 pt-5">
+                <div class=" ml-4 font-bold text-2xl text-green-900">Menu</div>
+             
+                <div class=" flex flex-col  lg:mt-6 p-6  ">
+                 
+                  <button class="bg-gradient-to-l from-green-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 lg:text-xl font-semibold hover:text-white hover:bg-green-600 text-white bg-green-500      lg:p-3 p-2  rounded-lg ">
+                    <a href="/pages/application.html">New Application</a>
+                  </button>
+                 
+               
+                </div>
+              </div>
+            <!-- <SideBar3 /> -->
+          </div>
+          <div class="col-span-6 m-5 md:col-span-5 ">
+          <div class="w-full  bg-white p-6 rounded-lg shadow-xl h-[29rem]">
+          
+      
+<!--  -->
+        <div class="flex  space-x-4">
+            <button id="button1" class="bg-green-500 hover:bg-green-600 active:bg-green-600 active  text-white px-4 py-2 rounded">View Form</button>
+            <button id="button2" class="bg-green-500 hover:bg-green-600  active:bg-green-600 text-white px-4 py-2 rounded">Total Numbers</button>
+            <button id="button3" class="bg-green-500 hover:bg-green-600  active:bg-green-600 text-white px-4 py-2 rounded">Chart</button>
+          </div>
+          <div id="container1" class="bg-white p-4 mt-4 rounded shadow" style="display: none;">
+            <table id="myDataTable" class="table-auto w-full mt-1 ">
+                <thead>
+                  <tr>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
+                      form </th>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
+                      Header </th>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
+                      Header </th>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2 ">Edit
+                    </th>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2 ">View
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Rodfw </td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2  hover:underline"><a
+                        href="">edit</a> </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                        class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
+                  </tr>
+                  <tr>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User</td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                        href="">edit</a></td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                        class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
+                  </tr>
+                  <tr>
+                    <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User</td>
+                    <td class="border   text-[14px] lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"> Cell </td>
+                    <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
+                    <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline">
+                      <a href="">edit</a> </td>
+                    <td class="border   text-[14px] lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                        class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
+    
+                  </tr>
+                  <tr>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                        href="">edit</a> </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                        class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          <div id="container2" class="bg-white p-4 mt-4 rounded shadow" style="display: none;">
+            <table id="myDataTable2" class="table-auto w-full mt-1 ">
+                <thead>
+                  <tr>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
+                      total </th>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
+                      Header </th>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
+                      Header </th>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2 ">Edit
+                    </th>
+                    <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2 ">View
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Rodfw </td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2  hover:underline"><a
+                        href="">edit</a> </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                        class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
+                  </tr>
+                  <tr>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User</td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                        href="">edit</a></td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                        class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
+                  </tr>
+                  <tr>
+                    <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User</td>
+                    <td class="border   text-[14px] lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"> Cell </td>
+                    <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
+                    <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline">
+                      <a href="">edit</a> </td>
+                    <td class="border   text-[14px] lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                        class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
+    
+                  </tr>
+                  <tr>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                    <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                        href="">edit</a> </td>
+                    <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                        class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          <div id="container3" class="bg-white p-4 mt-4 rounded shadow" style="display: none;">
+            chart image
+          </div>
+          <!--  -->
+            </div>
+          </div>
+          </div>
+        </div>
+        <script>
+      const buttons = document.querySelectorAll('[id^="button"]');
+    const containers = document.querySelectorAll('[id^="container"]');
+
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        containers.forEach((container, containerIndex) => {
+          if (index === containerIndex) {
+            container.style.display = 'block';
+          } else {
+            container.style.display = 'none';
+          }
+        });
+      });
+    });
+    // 
+    $(document).ready(function() {
+    $('#myDataTable').DataTable({
+        paging: true, // Enable pagination
+        searching: true, // Enable searching
+        ordering: true, // Enable sorting
+        // More options...
+    });
+});
+    $(document).ready(function() {
+    $('#myDataTable2').DataTable({
+        paging: true, // Enable pagination
+        searching: true, // Enable searching
+        ordering: true, // Enable sorting
+        // More options...
+    });
+});
+
+          </script>
+</body>
+</html>
