@@ -14,25 +14,25 @@
 <body>
     <div>
         <!-- <Header /> -->
-        <div class="bg-opacity-90 z-10 backdrop-filter sticky top-0 w-full bg-gradient-to-l from-green-600 flex items-center  px-8 py-2 bg-green-600 h-14 ">
-            <div class="bg-white rounded-full h-12  w-14 ">
-              <img src="/images/narc.png" class="  h-12 w-full" alt="" />
-            </div>
+        <div class="bg-opacity-90 z-10 backdrop-filter sticky top-0 flex items-center bg-gradient-to-l from-green-600  px-8 py-2 bg-green-600 h-14 ">
+          <div class="bg-white rounded-full h-12  w-14 ">
+            <img src="/images/narc.png" class="  h-12 w-full" alt="" />
+          </div>
       
-            <div class="flex items-center justify-between w-full ml-4">
-              <div>
+          <div class="flex justify-between items-center w-full ml-4">
+            <div>
       
-              <span class="text-white font-bold text-sm lg:text-2xl">
+              <span class="text-white font-bold lg:text-2xl">
                 Nepal Agricultural Research Council
               </span>
-              </div>
-              <div class="font-bold text-white text-sm md:text-xl hover:text-[1.6rem]">
-              <button><a href="/index.html">Logout <span>▼</span></a></button>
-              </div>
-      
             </div>
-            
+            <div class= "flex items-center font-bold text-gray-200 md:text-xl hover:text-[1.3rem] hover:text-white">
+              <a href="/index.html">Logout <span class="hidden lg:inline-block">▼</span></a>
+            </div>
+      
           </div>
+      
+        </div>
         <!-- <Header /> -->
     
     
@@ -40,51 +40,66 @@
     
         <div class=" h-full hidden md:block">
             <!-- <SideBar3/> -->
-            <div class="w-[15.8rem] fixed bg-gradient-to-l from-green-600 bg-green-200 lg:min-h-[93vh] h-full border  border-r-2 pt-5">
-                <div class=" ml-4 font-bold text-2xl text-green-600">Menu</div>
-             
-                <div class=" flex flex-col  lg:mt-6 p-6  ">
-                 
-                  <button class="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 lg:text-xl font-semibold hover:text-white hover:bg-green-600 text-white bg-green-500      lg:p-3 p-2  rounded-lg ">
-                   <a href="/pages/application.html">New Application</a>
+            <div class="lg:w-[15.8rem] md:w-[8rem]  fixed     lg:min-h-[93vh] h-full  shadow   pt-5">
+              <div class="flex  items-center ml-3">
+                <div class="ml-2"><img src="/images/list.png" width="24" alt=""></div>
+                <div class="  ml-4 font-bold text-2xl md:text-xl text-green-600">Menu</div>
+              </div>
+              <div class="border shadow-xl rounded-lg lg:m-4 h-[37rem]">
+                <div class=" gap-4 flex flex-col  mt-3 lg:p-6 md:p-2  ">
+    
+                  <!-- <button
+                    class="flex items-center  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 md:text-[11px] lg:text-[15px] font-semibold hover:text-black hover:bg-gray-100  border text-gray-700 bg-gray-100     lg:p-2  p-1  rounded-lg ">
+                    <span class="lg:mr-1  md:mr-1"><img src="/images/form.png" width="10" alt=""></span>
+                    <a href="/pages/application.html"> New Application</a>
+                  </button> -->
+                  <button
+                    class="flex items-center  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 md:text-[11px] lg:text-[15px] font-semibold hover:text-black hover:bg-gray-100  border text-gray-700 bg-gray-100     lg:p-2  p-1  rounded-lg ">
+                    <span class="lg:mr-1 md:mr-1"><img src="/images/user.png" width="20 " alt=""></span>
+                    <a href="/pages/createadmin.html">Create Admin</a>
                   </button>
-                   <button class="transition mt-6 ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 lg:text-xl font-semibold hover:text-white hover:bg-green-600 text-white bg-green-500      lg:p-3 p-2  rounded-lg">
-                    <Link to="/createadmin"><a href="/pages/createadmin.html">Create Admin</a></Link>
-                  </button>
-          
+    
+    
                 </div>
               </div>
+            </div>
             <!-- <SideBar3/> -->
+            
         </div>
         <div class="col-span-6 md:col-span-5 ">
         
-    
-       <div class="bg-gray-10 lg:p-6 h-[15.5rem] lg:h-[27rem]">
+    <div class="lg:pl-4 p-2 w-full">
+       <div class="bg-gray-10  lg:p-2 h-[41.5rem] md:h-[37.5rem] lg:h-[44rem]">
+        <div class="flex flex-col">
+
+   
         <span class='font-semibold lg:text-2xl'>Welcome Super Admin !!</span>
-        <div class="w-full h-full lg:mt-2 mx-auto bg-white md:p-4 rounded-lg shadow border">
+        <!-- <div class="w-full h-full lg:mt-2 mt-2 mx-auto bg-white md:p-4 rounded-lg shadow border"> -->
             <span class='font-semibold  text-[18px]  '>Admin List :</span>
-            <table id="myDataTable5" class="table-auto lg:mt-2  w-full">
+          </div>
+          <div class="shadow-xl border p-4 rounded-md">
+
+      
+            <table id="myDataTable5" class="table-auto lg:mt-2    lg:w-full">
+              <!-- w-[10rem] -->
                 <thead>
                 <tr>
-                <th class="border-gray-500 border text-sm h-10 lg:px-4  md:py-2">Name </th>
-                <th class="border-gray-500 border text-sm h-10 lg:px-4  md:py-2">Phone No. </th>
-                <th class="border-gray-500 border text-sm h-10 lg:px-4  md:py-2">Department </th>
-                <th class="border-gray-500 border text-sm h-10 lg:px-4  md:py-2">Header </th>
-                <th class="border-gray-500 border text-sm h-10 lg:px-4  md:py-2">View </th>
+                <th class="border-gray-500 border text-[14px] md:text-sm h-10 md:px-4  md:py-2">Name </th>
+                <th class="border-gray-500 border text-[14px] md:text-sm h-10 lg:px-4  md:py-2">Phone No. </th>
+                <th class="border-gray-500 border text-[14px] md:text-sm h-10 lg:px-4  md:py-2">Department </th>
+                <th class="border-gray-500 border text-[14px] md:text-sm h-10 lg:px-4  md:py-2">View </th>
                         
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                    <td class="border  lg:text-[18px] border-gray-500 h-[1rem] text-[14px] lg:px-4  px-2 py-2">Admin</td>
-                    <td class="border  lg:text-[18px] border-gray-500 h-[1rem] text-[14px] lg:px-4  px-2 py-2">xxxxx</td>
-                    <td class="border  lg:text-[18px] border-gray-500 h-[1rem] text-[14px] lg:px-4  px-2 py-2">xxxxx</td>
-                    <td class="border  lg:text-[18px] border-gray-500 h-[1rem] text-[14px] lg:px-4  px-2 py-2">xxxxx</td>
+                    <td class="border  lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4  px-2 py-2">Admin</td>
+                    <td class="border  lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4  px-2 py-2">xxxxx</td>
+                    <td class="border  lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4  px-2 py-2">xxxxx</td>
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)"  >view</a></td>
                     </tr>
                     <tr>
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px]  px-4 py-2">Admin</td>
-                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)"  >view</a></td></tr>
@@ -92,23 +107,57 @@
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">Admin</td>
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
-                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)">view</a></td> </tr>
                     <tr>
-                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">Admin</td>
-                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
-                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
-                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px]  px-4 py-2">xxxxx</td>
-                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)" >view</a></td> 
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">Admin</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)" >view</a></td> 
+                   </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">Admin</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)" >view</a></td> 
+                   </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">Admin</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)" >view</a></td> 
+                   </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">Admin</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)" >view</a></td> 
+                   </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">Admin</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)" >view</a></td> 
+                   </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">Admin</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)" >view</a></td> 
+                   </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">Admin</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 md:h-[1rem] text-[14px] lg:text-[14px] p-1 md:px-4 md:py-2 hover:underline"><a class="cursor-pointer" onclick="toggleView(this)" >view</a></td> 
                    </tr>
                 </tbody>
             </table>
+          </div>
+        <!-- </div> -->
         </div>
-        </div>
-       <div class="bg-gray-10 md:p-6 h-[30.5rem]  "  id="additionalContainer">
-        <div class="w-full h-full mx-auto bg-white p-4 rounded-lg mt-4  shadow border">
+       <div class="bg-gray-10 md:p-2 h-[42.5rem] md:h-[39rem]  mt-12 "  id="additionalContainer">
             <span class='font-semibold  text-[18px]  '>User List :</span>
-            <div class='md:mt-2'>
+            <div class='shadow-xl p-4 rounded-md mb-4 border'>
             <table id="myDataTable6" class="table-auto  w-full -ml-1">
                 <thead>
                     <tr>
@@ -148,12 +197,41 @@
                     <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
                       
                     </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">User 5</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                      
+                    </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">User 5</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                      
+                    </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">User 5</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                      
+                    </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">User 5</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                      
+                    </tr>
+                    <tr>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">User 5</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                    <td class=" border lg:text-[18px] border-gray-500 h-[1rem] text-[14px] px-4 py-2">xxxxx</td>
+                      
+                    </tr>
                 </tbody>
             </table>
             </div>
         </div>
-        </div>
-            
+      </div>
     
       </div>
         </div>

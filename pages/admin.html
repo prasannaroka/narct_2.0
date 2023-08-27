@@ -14,20 +14,21 @@
 </head>
 <div>
   <!-- <Header /> -->
-  <div class="bg-opacity-90 z-10 backdrop-filter sticky top-0 flex items-center bg-gradient-to-l from-green-600  px-8 py-2 bg-green-600 h-14 ">
+  <div
+    class="bg-opacity-90 z-10 backdrop-filter sticky top-0 flex items-center bg-gradient-to-l from-green-600  px-8 py-2 bg-green-600 h-14 ">
     <div class="bg-white rounded-full h-12  w-14 ">
       <img src="/images/narc.png" class="  h-12 w-full" alt="" />
     </div>
 
-    <div class="flex justify-between w-full ml-4">
+    <div class="flex justify-between items-center w-full ml-4">
       <div>
 
         <span class="text-white font-bold lg:text-2xl">
           Nepal Agricultural Research Council
         </span>
       </div>
-      <div class="font-bold text-white text-xl hover:text-[1.6rem]">
-        <a href="/index.html">Logout <span >▼</span></a>
+      <div class="font-bold text-gray-200 md:text-xl hover:text-[1.3rem] hover:text-white">
+        <a href="/index.html">Logout <span class="hidden md:inline-block">▼</span></a>
       </div>
 
     </div>
@@ -38,128 +39,178 @@
   <div class="grid grid-cols-6">
     <div class=" h-full hidden md:block">
       <!-- <SideBar /> -->
-      <div class="w-[15.8rem] fixed bg-gradient-to-l from-green-600 bg-green-200 lg:min-h-[93vh] h-full border  border-r-2 pt-5">
-        <div class=" ml-4 font-bold text-2xl text-green-900">Menu</div>
+      <div class="lg:w-[15.8rem] md:w-[14rem] fixed     lg:min-h-[93vh] h-full  shadow   pt-5">
+        <div class="flex  items-center ml-3">
+          <div class="ml-2"><img src="/images/list.png" width="24" alt=""></div>
+          <div class="  ml-4 font-bold text-2xl md:text-xl text-green-600">Menu</div>
+        </div>
+        <div class="border shadow-xl rounded-lg m-4 h-[37rem]">
+          <div class=" gap-4 flex flex-col  mt-3 lg:p-6 p-2 ">
 
-        <div class=" flex flex-col  lg:mt-6 p-6  ">
-
-          <button
-            class="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 lg:text-xl font-semibold hover:text-white hover:bg-green-600 text-white bg-green-500      lg:p-3 p-2  rounded-lg ">
-            <a href="/pages/application.html">New Application</a>
+            <button
+            class="flex items-center  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 lg:text-[15px] font-semibold hover:text-black hover:bg-gray-100  border text-gray-700 bg-gray-100     lg:p-2  p-1  rounded-lg ">
+            <span class="mr-1 "><img src="/images/user.png" width="20" alt=""></span>
+            <a href="/pages/createuser.html">Create user</a>
           </button>
           <button
-            class="transition mt-6 ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 lg:text-xl font-semibold hover:text-white hover:bg-green-600 text-white bg-green-500      lg:p-3 p-2  rounded-lg">
-            <a href="/pages/createuser.html">Create User</a>
+            class="flex items-center  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 md:text-[11px] lg:text-[15px] font-semibold hover:text-black hover:bg-gray-100  border text-gray-700 bg-gray-100     lg:p-2  p-1  rounded-lg ">
+            <span class="mr-1 "><img src="/images/bar-chart.png" width="20" alt=""></span>
+            <a href="/pages/admin.html"> Chart</a>
           </button>
+        
+          
 
+
+          </div>
         </div>
       </div>
+   
       <!-- <SideBar /> -->
     </div>
 
-    <!-- <div class="absolute">
 
-  <div class=" md:hidden lg:hidden justify-end ml-[1rem] items-center">
-    
-    <button class=" bg-green-600 p-1 px-2 text-sm rounded-md font-semibold text-white mt-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100  font-semibold hover:bg-green-600 text-white bg-green-500 ">Create user</button>
-    &nbsp; &nbsp;  
-    <button class=" bg-green-600 p-1 px-2 text-sm  rounded-md font-semibold text-white mt-1 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100  font-semibold hover:bg-green-600 text-white bg-green-500 ">Create user</button>
-  </div>
-</div> -->
+    <div class="col-span-6 m-5 md:col-span-5 md:ml-[8rem] lg:ml-4 ">
+      <div class="bg-gray-10 lg:m-4 lg:h-[42rem]  h-[42rem] ">
 
-    <div id="sidebar"
-    
-      class="hidden  sm:block fixed  top-0 left-[-250px] h-screen bg-green-400 w-60 transition-all duration-300 ease-in-out">
-<div class="flex flex-col items-center mt-9">
-      <span class="font-bold text-xl">MENU</span>
-      <button
-        class="transition text-sm mt-9 m-4 ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100  font-semibold hover:text-white hover:bg-green-600 text-white bg-green-500   p-2  rounded-lg"><a
-          href="/pages/createuser.html">Create User</a></button>
-      <button
-        class="transition text-sm mt-2 m-4 ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100  font-semibold hover:text-white hover:bg-green-600 text-white bg-green-500   p-2  rounded-lg"><a
-          href="/pages/application.html">New Application</a></button>
-    </div>
-    </div>
-    <div class="col-span-6 md:col-span-5 ">
-      <div class="bg-gray-10 lg:m-4 h-[25rem] ">
-        <div class="justify-between flex px-2 mt-2">
 
-          <span class="text-xl font-semibold">Welcome Admin !!!</span>
-          <div class="md:hidden lg:hidden block">
-            <button id="sidebarToggle"
-              class="transition text-sm mb-1 ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100  font-semibold hover:text-white hover:bg-green-600 text-white bg-green-500   p-2  rounded-lg">Menu<span>
-          </div>
-        </div>
+        <span class="text-xl font-semibold">Welcome Admin !!!</span>
+
         <div
-          class=" lg:w-full mx-auto md:w lg:p-4 items-center    h-[16rem] lg:h-[25rem] w-full  md:mt-2 pt-2 rounded-lg shadow border">
-          <span class='font-semibold text-2xl ' id="sidebarToggle">Users List </span>
-          <div class="mt-6">
+          class=" lg:w-full mx-auto md:w lg:p-4 items-center    h-full lg:h-[42rem] w-full  md:mt-2 lg:pt-2 rounded-lg shadow border">
+          <span class='font-semibold lg:text-2xl text-[18px] ' id="sidebarToggle">Users List </span>
+          <div class="lg:mt-6 mt-2">
 
-          
-          <table id="myDataTable3" class="table-auto w-full mt-1 ">
-            <thead>
-              <tr>
-                <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
-                  Header </th>
-                <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
-                  Header </th>
-                <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
-                  Header </th>
-                <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2 ">Edit
-                </th>
-                <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2 ">View
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
-                <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Rodfw </td>
-                <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
-                <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2  hover:underline"><a
-                    href="">edit</a> </td>
-                <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
-                    class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
-              </tr>
-              <tr>
-                <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User</td>
-                <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
-                <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
-                <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
-                    href="">edit</a></td>
-                <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
-                    class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
-              </tr>
-              <tr>
-                <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User</td>
-                <td class="border   text-[14px] lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"> Cell </td>
-                <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
-                <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline">
-                  <a href="">edit</a> </td>
-                <td class="border   text-[14px] lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
-                    class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
 
-              </tr>
-              <tr>
-                <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
-                <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
-                <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
-                <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
-                    href="">edit</a> </td>
-                <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
-                    class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+            <table id="myDataTable3" class="table-auto lg:mt-2  w-full  ">
+              <thead>
+                <tr>
+                  <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
+                    Header </th>
+                  <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
+                    Header </th>
+                  <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2">
+                    Header </th>
+                  <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2 ">
+                    Edit
+                  </th>
+                  <th class="border-gray-500 border text-xs font-semibold lg:text-xl h-10 lg:px-4 px-1 py-1 lg:py-2 ">
+                    View
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Rodfw </td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2  hover:underline">
+                    <a href="">edit</a> </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User</td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                      href="">edit</a></td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User</td>
+                  <td class="border   text-[14px] lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"> Cell </td>
+                  <td class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row</td>
+                  <td
+                    class="border  text-[14px]  lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline">
+                    <a href="">edit</a> </td>
+                  <td class="border   text-[14px] lg: lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                      href="">edit</a> </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                      href="">edit</a> </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                      href="">edit</a> </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                      href="">edit</a> </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                      href="">edit</a> </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                      href="">edit</a> </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">User </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border  text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2">Row </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2 hover:underline"><a
+                      href="">edit</a> </td>
+                  <td class="border   text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  px-4 py-2"><a
+                      class="cursor-pointer hover:underline hover:text-green-800" onclick="toggleView(this)">view</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
 
-      <div id="additionalContainer"
-        class="hidden bg-gray-10  lg:w-full   lg:p-6 lg:h-[27rem]  border-gray-500 ">
-        <div class="  lg:h-[27rem] mt-5 mx-auto bg-white p-4 rounded-lg   shadow border w-full">
-          <span class='font-semibold text-xl  '>Data List :</span>
+      <div id="additionalContainer" class="hidden bg-gray-10  lg:w-full mt-5 mt-[3rem]  lg:p-6 lg:h-[40rem]  border-gray-500 ">
+        <div class="  lg:h-[42rem] mt-5 mx-auto bg-white p-4 rounded-lg   shadow border w-full">
+          <span class='font-semibold text-xl  '>Form List :</span>
           <div class="mt-2">
             <table id="myDataTable4" class="table-auto  w-full">
               <thead>
@@ -206,6 +257,36 @@
                   <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
                   <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
                 </tr>
+                <tr>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row</td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                </tr>
+                <tr>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row</td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                </tr>
+                <tr>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row</td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                </tr>
+                <tr>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row</td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                </tr>
+                <tr>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row</td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border text-[14px]  lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                  <td class="border  text-[14px] lg:text-[18px] border-gray-500 h-[1rem]  lg:px-4  px-2 py-2">Row </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -239,24 +320,27 @@
     }
   });
   // 
-  $(document).ready(function() {
+  $(document).ready(function () {
     $('#myDataTable3').DataTable({
-        paging: true, // Enable pagination
-        searching: true, // Enable searching
-        ordering: true, // Enable sorting
-        // More options...
+      paging: true, // Enable pagination
+      searching: true, // Enable searching
+      ordering: true, // Enable sorting
+      // More options...
     });
-});
-// 
-$(document).ready(function() {
+  });
+  // 
+  $(document).ready(function () {
     $('#myDataTable4').DataTable({
-        paging: true, // Enable pagination
-        searching: true, // Enable searching
-        ordering: true, // Enable sorting
-        // More options...
+      paging: true, // Enable pagination
+      searching: true, // Enable searching
+      ordering: true, // Enable sorting
+      // More options...
     });
-});
-
+  });
+  // 
+function Open(){
+  document.querySelector('.sidebaar').classList.toggle('left-[-300px]')
+}
 </script>
 </body>
 

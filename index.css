@@ -2,3 +2,17 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+@media (max-width: 767px) {
+    /* Styles for mobile screens */
+    #container1 {
+        display: none; /* Hide the container initially on mobile screens */
+    }
+}
+
+@media (min-width: 768px) {
+    /* Styles for larger screens (lg) */
+    #container1 {
+        display: flex;
+        flex-direction: row;
+    }
+}

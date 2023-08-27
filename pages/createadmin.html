@@ -13,7 +13,7 @@
   <div>
     <!-- <Header /> -->
     <div
-      class="bg-opacity-90 z-10 backdrop-filter sticky top-0 bg-gradient-to-l from-green-600 flex items-center  px-8 py-2 bg-green-600 h-14 ">
+      class="bg-opacity-90 z-10 backdrop-filter sticky top-0  flex items-center  px-8 py-2 bg-green-600 h-14 ">
       <div class="bg-white rounded-full h-12  w-14 ">
         <img src="/images/narc.png" class="  h-12 w-full" alt="" />
       </div>
@@ -25,7 +25,7 @@
             Nepal Agricultural Research Council
           </span>
         </div>
-        <div class="font-bold text-white text-xl hover:text-[1.6rem]">
+        <div class="font-bold text-gray-200 text-xl hover:text-[1.3rem] hover:text-white">
           <a href="/index.html">Logout <span>▼</span></a>
         </div>
 
@@ -37,19 +37,21 @@
     <div class="grid grid-cols-6">
       <div class=" h-full hidden md:block">
         <!-- <SideBar3 /> -->
-        <div class="w-[15.8rem] fixed    lg:min-h-[93vh] h-full border  border-r-2 pt-5">
-          <div class="flex items-center ml-3">
+        <div class="lg:w-[15.8rem] md:w-[14rem] fixed     lg:min-h-[93vh] h-full  shadow   pt-5">
+          <div class="flex  items-center ml-3">
             <div class="ml-2"><img src="/images/list.png" width="24" alt=""></div>
-            <div class="  ml-4 font-bold text-2xl text-black">Menu</div>
+            <div class="  ml-4 font-bold text-2xl md:text-xl text-green-600">Menu</div>
           </div>
           <div class="border shadow-xl rounded-lg m-4 h-[37rem]">
-            <div class=" flex flex-col  lg:mt-3 p-6  ">
+            <div class=" gap-4 flex flex-col  mt-3 lg:p-6 p-2 ">
 
               <button
-                class="flex items-center  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 lg:text-[16px] font-semibold hover:text-black hover:bg-gray-200  border text-gray-700 bg-gray-100     lg:p-2  p-2  rounded-lg ">
-                <span class="mr-2"><img src="/images/form.png" width="10" alt=""></span>
-                <a href="/pages/application.html"> New Application</a>
+                class="flex items-center  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 md:text-[11px] lg:text-[15px] font-semibold hover:text-black hover:bg-gray-100  border text-gray-700 bg-gray-100     lg:p-2  p-1  rounded-lg ">
+                <span class="mr-1 "><img src="/images/webpage.png" width="25" alt=""></span>
+                <a href="/pages/superadmin.html"> Dashboard</a>
               </button>
+          
+            
 
 
             </div>
@@ -57,8 +59,8 @@
         </div>
         <!-- <SideBar3 /> -->
       </div>
-      <div class="col-span-6 m-5 md:col-span-5 ">
-        <div class="w-full  bg-white p-6 rounded-lg shadow-lg">
+      <div class="col-span-6 m-5 md:col-span-5 md:ml-[8rem] lg:ml-4">
+        <div class="w-full  bg-white p-6 rounded-lg shadow-xl">
           <h2 class="text-2xl  font-semibold mb-4">Create Admin </h2>
           <form>
             <div class="mb-4">
@@ -68,7 +70,7 @@
             </div>
             <div class="mb-4 ">
               <label class="block text-gray-700 font-semibold text-[18px]  mb-2" for="country">
-                Country
+                Department
               </label>
               <select id="country" name="country"
                 class="block border border-gray-500 w-full px-4 py-1 border rounded-md bg-white text-gray-700 focus:outline-none focus:ring focus:border-blue-300">
@@ -95,7 +97,7 @@
                 class="mt-1 text-gray-700 px-2 py-1 w-full text-[14px]  border border-gray-500 rounded-md focus:ring focus:ring-green-300" />
             </div>
             <button type="submit"
-              class=" mt-3 text-xl font-semibold from-green-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 bg-green-500 text-white py-2 px-4 rounded focus:outline-none focus:ring focus:ring-green-300">
+              class="bg-gradient-to-l from-green-600 mt-3 text-xl font-semibold from-green-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-100 bg-green-500 text-white py-2 px-4 rounded focus:outline-none focus:ring focus:ring-green-300">
               Create User
             </button>
           </form>
